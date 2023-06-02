@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 10px 35px;
+}
+
+.links {
+   font-size: 32px;
+}
+
+.link {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+ 
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
