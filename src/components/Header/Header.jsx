@@ -9,7 +9,7 @@ export const Header = ({ className }) => {
   return (
     <header className={classNames(styles.root, className)}>
       <Link href="/" className={styles.link}>
-        <Image src="/images/logo_header.png" width={115} height={47} alt="" />
+        <Image src="/images/whiteLogo.png" width={115} height={47} alt="" />
       </Link>
       <div className={styles.links}>
         <Link href="/" className={styles.link}>
@@ -19,7 +19,7 @@ export const Header = ({ className }) => {
           Restaurants
         </Link>
         <Link href="/cart" className={styles.link}>
-          Cart
+          <Image src="/images/whiteCart.png" width={30} height={30} alt="Cart" />
         </Link>
       </div>
     </header>

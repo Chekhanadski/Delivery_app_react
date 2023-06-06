@@ -14,9 +14,9 @@ export const Dish = ({ dish, amount, increment, decrement, className }) => {
 
   return (
     <div className={classNames(styles.root, className)}>
-      <span className={styles.title}>{name}</span>
-      <span className={styles.price}>{price}р</span>
-      {amount > 0 && <span className={styles.sum}>{amount * price}р</span>}
+      <span className={styles.title}>{name}
+      <span className={styles.price}>|  ${price}</span></span>
+      {amount > 0 && <span className={styles.sum}>${amount * price}</span>}
       <Button
         className={styles.decrementAction}
         type="secondary"
@@ -33,7 +33,7 @@ export const Dish = ({ dish, amount, increment, decrement, className }) => {
         onClick={increment}
       >
         +
-      </Button>
+      </Button>    
     </div>
   );
 };

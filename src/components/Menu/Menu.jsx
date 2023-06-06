@@ -3,6 +3,8 @@ import React from "react";
 
 import styles from "./styles.module.scss";
 import { DishContainer } from "@/containers/Dish/Dish";
+import Link from "next/link";
+import Image from "next/image";
 
 export const Menu = ({ menu }) => {
   return (
@@ -13,6 +15,9 @@ export const Menu = ({ menu }) => {
           <DishContainer key={dishId} dishId={dishId} className={styles.dish} />
         ))}
       </ul>
+      <Link href="/cart" className={styles.link}>
+        <Image src="/images/blackCart.png" width={30} height={30} alt="Cart" />
+      </Link>
     </div>
   );
 };
