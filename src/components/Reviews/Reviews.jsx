@@ -10,7 +10,7 @@ export const Reviews = ({ reviews }) => {
 
   return (
     <div>
-      <h3>Отзывы</h3>
+      <h3>Reviews</h3>
       <div className={styles.reviews}>
         {reviews.map((reviewId) => (
           <ReviewContainer

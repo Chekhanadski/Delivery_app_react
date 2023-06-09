@@ -29,7 +29,7 @@ export const Dish = ({ dish, amount, increment, decrement, className }) => {
       <Button
         className={styles.incrementAction}
         type="primary"
-        disabled={amount === 5}
+        disabled={amount === 9}
         onClick={increment}
       >
         +

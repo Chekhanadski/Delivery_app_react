@@ -1,5 +1,8 @@
 import { Rating } from "@/components/Rating/Rating";
 import React, { useReducer, useState } from "react";
+import styles from "./styles.module.scss";
+import classNames from "classnames";
+import { Button } from "../Button/Button";
 
 const initialState = {
   name: "",
@@ -27,34 +30,43 @@ export const NewReviewForm = () => {
   const [formValue, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div>
-      <div>
-        <label>Name</label>
-        <input
-          value={formValue.name}
-          onChange={(event) =>
-            dispatch({ type: "setName", payload: event.target.value })
-          }
-        />
+    <div className={classNames(styles.root, styles.newReview)}>
+      <div className={styles.header}>Leave your feedback</div>
+      <div className={styles.inputs}>
+        <div>        
+          <input                    
+            placeholder = "Your name"
+            value={formValue.name}
+            onChange={(event) =>
+              dispatch({ type: "setName", payload: event.target.value })
+            }
+            className={styles.input}          
+          />
+        </div>
+        <div>        
+          <input           
+            placeholder = "Your review"
+            name="newReview"
+            value={formValue.text}
+            onChange={(event) =>
+              dispatch({ type: "setText", payload: event.target.value })
+            } 
+            className={styles.input}        
+          />
+          <div>
+            <Button>SEND</Button>
+          </div>
+          
+        </div>
       </div>
-      <div>
-        <label>Text</label>
-        <input
-          value={formValue.text}
-          onChange={(event) =>
-            dispatch({ type: "setText", payload: event.target.value })
-          }
-        />
-      </div>
-      <div>
-        <label>Rating</label>
+      <div className={styles.rating}>          
         <Rating
           value={formValue.rating}
           onChange={(rating) =>
             dispatch({ type: "setRating", payload: rating })
           }
         />
-      </div>
+      </div> 
     </div>
   );
 };

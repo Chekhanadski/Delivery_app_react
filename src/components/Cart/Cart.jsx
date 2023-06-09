@@ -1,17 +1,28 @@
 import React from "react";
 import { DishContainer } from "@/containers/Dish/Dish";
+import { Button } from "../Button/Button";
+import styles from "./styles.module.scss";
 
 export const Cart = ({ cart }) => {
   return (
     <div>
-      <h3>Cart</h3>
+      <div className={styles.header}>
+        Cart
+      </div>
       <ul>
-        {Object.entries(cart).map(([id]) => (
-          <li key={id}>
-            <DishContainer dishId={id} />          
-          </li>
-        ))}
+        {Object.entries(cart).map(([id, amount]) => {
+          return (
+            <>
+              {amount > 0 && (
+                <li key={id}>
+                  <DishContainer dishId={id} />
+                </li>
+              )}
+            </>
+          );
+        })}
       </ul>
+      <Button className={styles.button}>ORDER</Button>
     </div>
   );
 };

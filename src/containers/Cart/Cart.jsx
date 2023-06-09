@@ -5,10 +5,17 @@ import { useSelector } from "react-redux";
 
 export const CartContainer = () => {
   const cart = useSelector(selectCartModule);
-
-  if (!Object.keys(cart || {}).length) {
+  if (
+    !Object.keys(cart || {}).length ||
+    Object.entries(cart).every(([id, amount]) => amount === 0)
+  ) {
     return <div>The shopping cart is empty</div>;
   }
 
-  return <Cart cart={cart} />;
+  return (
+    <div>
+      <Cart cart={cart} />      
+    </div>
+  )
+    
 };
