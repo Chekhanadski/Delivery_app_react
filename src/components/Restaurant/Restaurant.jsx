@@ -25,19 +25,15 @@ export const Restaurant = ({ restaurant }) => {
         <Link
           href={`/restaurants/${restaurant.id}/menu`}
           className={styles.link}
-          >  
-          <Button>
-            MENU
-          </Button> 
+        >
+          <Button>MENU</Button>
         </Link>
         <Link
           href={`/restaurants/${restaurant.id}/reviews`}
           className={styles.link}
-          >
-          <Button>
-            REVIEWS
-          </Button>                    
-        </Link>        
+        >
+          <Button>REVIEWS</Button>
+        </Link>
       </div>
     </div>
   );

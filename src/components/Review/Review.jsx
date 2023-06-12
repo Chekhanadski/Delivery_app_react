@@ -1,9 +1,9 @@
 import { Rating } from "@/components/Rating/Rating";
 import { UserContainer } from "@/containers/User/User";
 import React from "react";
+import classNames from "classnames";
 
 import styles from "./styles.module.scss";
-import classNames from "classnames";
 
 export const Review = ({ review, className }) => {
   if (!review) {
@@ -16,9 +16,9 @@ export const Review = ({ review, className }) => {
     <div className={classNames(styles.root, className)}>
       <div className={styles.header}>
         <UserContainer userId={userId} />
-        <Rating value={rating} size="s" />              
+        <Rating value={rating} size="s" />
       </div>
-      <p>{text}</p>      
+      <p>{text}</p>
     </div>
   );
 };

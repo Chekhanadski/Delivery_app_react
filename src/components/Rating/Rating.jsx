@@ -1,6 +1,7 @@
 import classNames from "classnames";
-import styles from "./styles.module.scss";
 import Image from "next/image";
+
+import styles from "./styles.module.scss";
 
 const MAX_RATING = 5;
 

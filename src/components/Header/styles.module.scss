@@ -7,14 +7,15 @@
 }
 
 .links {
-   font-size: 32px;
+  display: flex;
+  font-size: 32px;
 }
 
 .link {
   &:not(:last-child) {
     margin-right: 30px;
   }
- 
+
   color: white;
   text-decoration: none;
   transition: opacity 0.2s;
@@ -22,4 +23,24 @@
   &:hover {
     opacity: 0.8;
   }
+}
+
+.image {
+  position: relative;
+}
+
+.amount {
+  position: absolute;
+  right: 28px;
+  bottom: 15px;
+  font-size: 13px;
+  font-weight: 900;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

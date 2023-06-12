@@ -1,5 +1,8 @@
 import { User } from "@/components/User/User";
-import { selectIsUserLoading, selectUserById } from "@/store/entities/user/selectors";
+import {
+  selectIsUserLoading,
+  selectUserById,
+} from "@/store/entities/user/selectors";
 import React from "react";
 import { useSelector } from "react-redux";
 

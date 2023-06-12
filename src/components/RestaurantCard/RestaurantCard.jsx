@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
+import classNames from "classnames";
 
 import styles from "./styles.module.scss";
-import classNames from "classnames";
 
 export const RestaurantCard = ({ restaurant, className }) => {
   return (

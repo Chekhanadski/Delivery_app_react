@@ -22,8 +22,27 @@
   color: white;
   text-decoration: none;
   transition: opacity 0.2s;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
   
   &:hover {
     opacity: 0.8;
   }
+}
+
+.amount {
+  position: absolute;
+  right: 12px;
+  bottom: -8px;
+  font-size: 13px;
+  font-weight: 900;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

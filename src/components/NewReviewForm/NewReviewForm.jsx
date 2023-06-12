@@ -1,8 +1,9 @@
 import { Rating } from "@/components/Rating/Rating";
-import React, { useReducer, useState } from "react";
-import styles from "./styles.module.scss";
+import React, { useReducer } from "react";
 import classNames from "classnames";
 import { Button } from "../Button/Button";
+
+import styles from "./styles.module.scss";
 
 const initialState = {
   name: "",
@@ -26,47 +27,46 @@ const reducer = (state, action) => {
   }
 };
 
-export const NewReviewForm = () => {
+export const NewReviewForm = ({ setIsFormReady }) => {
   const [formValue, dispatch] = useReducer(reducer, initialState);
 
   return (
     <div className={classNames(styles.root, styles.newReview)}>
       <div className={styles.header}>Leave your feedback</div>
       <div className={styles.inputs}>
-        <div>        
-          <input                    
-            placeholder = "Your name"
+        <div>
+          <input
+            placeholder="Your name"
             value={formValue.name}
             onChange={(event) =>
               dispatch({ type: "setName", payload: event.target.value })
             }
-            className={styles.input}          
+            className={styles.input}
           />
         </div>
-        <div>        
-          <input           
-            placeholder = "Your review"
+        <div>
+          <input
+            placeholder="Your review"
             name="newReview"
             value={formValue.text}
             onChange={(event) =>
               dispatch({ type: "setText", payload: event.target.value })
-            } 
-            className={styles.input}        
+            }
+            className={styles.input}
           />
           <div>
-            <Button>SEND</Button>
+            <Button onClick={() => setIsFormReady(true)}>SEND</Button>
           </div>
-          
         </div>
       </div>
-      <div className={styles.rating}>          
+      <div className={styles.rating}>
         <Rating
           value={formValue.rating}
           onChange={(rating) =>
             dispatch({ type: "setRating", payload: rating })
           }
         />
-      </div> 
+      </div>
     </div>
   );
 };

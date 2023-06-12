@@ -12,5 +12,6 @@ export const cartSlice = createSlice({
     decrement: (state, { payload }) => {
       state[payload] = state[payload] ? state[payload] - 1 : 0;
     },
+    clear: () => initialState,
   },
 });

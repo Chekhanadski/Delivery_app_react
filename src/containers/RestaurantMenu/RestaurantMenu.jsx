@@ -1,9 +1,6 @@
 import { Menu } from "@/components/Menu/Menu";
 import { selectIsDishLoading } from "@/store/entities/dish/selectors";
-import {
-  fetchDishByRestaurantId,
-  loadDishByRestaurantIdIfNotExisted,
-} from "@/store/entities/dish/thunk/loadDishByRestaurantIdIfNotExisted";
+import { fetchDishByRestaurantId } from "@/store/entities/dish/thunk/loadDishByRestaurantIdIfNotExisted";
 import { selectMenuByRestaurantId } from "@/store/entities/restaurant/selectors";
 import { fetchRestaurants } from "@/store/entities/restaurant/thunks/loadRestaurantIfNotExisted";
 import React, { useEffect } from "react";
