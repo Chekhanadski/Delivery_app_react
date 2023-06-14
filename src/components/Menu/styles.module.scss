@@ -15,7 +15,7 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
- 
+
   text-align: right;
   padding-top: 20px;
   padding-right: 20px;
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: flex-end;
   position: relative;
-  
+
   &:hover {
     opacity: 0.8;
   }

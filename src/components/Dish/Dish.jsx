@@ -33,7 +33,7 @@ export const Dish = ({ dish, amount, increment, decrement, className }) => {
         onClick={increment}
       >
         +
-      </Button>      
+      </Button>
     </div>
   );
 };
