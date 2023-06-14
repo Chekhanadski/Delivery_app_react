@@ -8,9 +8,7 @@ export const Layout = ({ children }) => {
   return (
     <div className={styles.root}>
       <Header className={styles.header} />
-      <div className={styles.content}>
-        {children}
-        </div>
+      <div className={styles.content}>{children}</div>
       <footer className={styles.footer}>
         <Link href="/contacts/about-us" className={styles.link}>
           Info about us

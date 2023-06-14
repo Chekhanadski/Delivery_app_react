@@ -4,7 +4,9 @@ import { useRouter } from "next/router";
 export default function CurrentRestaurantsPage() {
   const { query } = useRouter();
 
-  return <div>
-    <RestaurantReviewsContainer restaurantId={query.restaurantId} />
-    </div>  
+  return (
+    <div>
+      <RestaurantReviewsContainer restaurantId={query.restaurantId} />
+    </div>
+  );
 }
