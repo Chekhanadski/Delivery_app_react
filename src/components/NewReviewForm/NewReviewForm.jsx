@@ -45,13 +45,14 @@ export const NewReviewForm = ({ setIsFormReady }) => {
           />
         </div>
         <div>
-          <textarea            
+          <textarea
+            placeholder="Your review"            
             name="newReview"
             value={formValue.text}
             onChange={(event) =>
               dispatch({ type: "setText", payload: event.target.value })
             }
-            className={styles.input}
+            className={styles.textarea}
           />
           <div>
             <Button onClick={() => setIsFormReady(true)}>SEND</Button>
