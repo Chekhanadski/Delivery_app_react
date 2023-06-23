@@ -45,8 +45,7 @@ export const NewReviewForm = ({ setIsFormReady }) => {
           />
         </div>
         <div>
-          <input
-            placeholder="Your review"
+          <textarea            
             name="newReview"
             value={formValue.text}
             onChange={(event) =>
