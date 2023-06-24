@@ -34,28 +34,30 @@ export const NewReviewForm = ({ setIsFormReady }) => {
     <div className={classNames(styles.root, styles.newReview)}>
       <div className={styles.header}>Leave your feedback</div>
       <div className={styles.inputs}>
-        <div>
-          <input
-            placeholder="Your name"
-            value={formValue.name}
-            onChange={(event) =>
-              dispatch({ type: "setName", payload: event.target.value })
-            }
-            className={styles.input}
-          />
-        </div>
-        <div>
-          <textarea
-            placeholder="Your review"            
-            name="newReview"
-            value={formValue.text}
-            onChange={(event) =>
-              dispatch({ type: "setText", payload: event.target.value })
-            }
-            className={styles.textarea}
-          />
+        <div className={styles.newReview}>
           <div>
-            <Button onClick={() => setIsFormReady(true)}>SEND</Button>
+            <input
+              placeholder="Your name"
+              value={formValue.name}
+              onChange={(event) =>
+                dispatch({ type: "setName", payload: event.target.value })
+              }
+              className={styles.input}
+            />
+          </div>
+          <div>
+            <textarea
+              placeholder="Your review"
+              name="newReview"
+              value={formValue.text}
+              onChange={(event) =>
+                dispatch({ type: "setText", payload: event.target.value })
+              }
+              className={styles.textarea}
+            />
+            <div>
+              <Button onClick={() => setIsFormReady(true)}>SEND</Button>
+            </div>
           </div>
         </div>
       </div>
