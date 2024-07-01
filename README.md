@@ -12,7 +12,7 @@ The "Food and Drinks" project simulates the operation of a website for ordering 
 - Leave reviews and ratings for restaurants.
 - View information about restaurants, including images and descriptions.
 
-## Applied Technologies
+## Technology Stack
 
 - **React:** For building the user interface.
 - **Next.js:** For server-side rendering and static site generation.
