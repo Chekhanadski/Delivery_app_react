@@ -40,7 +40,7 @@ git clone https://github.com/your-username/food-and-drinks.git
 cd food-and-drinks
 ```
 
-2. **Install dependencies:**
+**2. Install dependencies:**
 
 ```sh
 npm install
