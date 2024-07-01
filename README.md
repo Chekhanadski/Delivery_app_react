@@ -1,5 +1,9 @@
 # Food and Drinks - Restaurant Ordering Website
 
+## View the Project
+
+Due to the use of a mock server, deploying this project is challenging. Therefore, it is recommended to run and view the project locally.
+
 ## About the Project
 
 The "Food and Drinks" project simulates the operation of a website for ordering food from restaurants in the city. Users can choose dishes they are interested in and place their orders on the website. Additionally, users have the opportunity to leave reviews about the restaurants.
