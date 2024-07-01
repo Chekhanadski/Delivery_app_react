@@ -61,7 +61,7 @@ npm run dev
 **5. Open the app:**
 Navigate to http://localhost:3000 in your web browser.
 
-Available Scripts
+## Available Scripts
 - **npm run dev:** Starts the development server with hot reloading.
 - **npm run build:** Builds the application for production.
 - **npm run start:** Starts the application in production mode.
