@@ -1,24 +1,69 @@
-# REACT PROJECT
+# Food and Drinks - Restaurant Ordering Website
 
-## About Project:
+## About the Project
 
-The Restaurants "Food and Drinks" project simulates the operation of a website ordering food from restaurants in the city. The user can choose the dishes he is interested in and place their order on the website. The user also has the opportunity to leave a review about restaurants.
+The "Food and Drinks" project simulates the operation of a website for ordering food from restaurants in the city. Users can choose dishes they are interested in and place their orders on the website. Additionally, users have the opportunity to leave reviews about the restaurants.
 
-## Applied technologies in the project:
+## Features
 
-- React
-- Next.js
-- React Hooks
-- Redux
-- Redux Thunk
-- Redux Toolkit
-- Async Thunk
-- Fetch
-- SSR
+- Browse and order from a variety of restaurant menus.
+- Add and remove items from the cart.
+- Place orders.
+- Leave reviews and ratings for restaurants.
+- View information about restaurants, including images and descriptions.
 
-## Actions to view the project:
+## Applied Technologies
 
-- clone this repo
-- run `npm instal`l to install dependencies;
-- run `npm run start-server` to start the local server;
-- run `npm run dev` to see the app at `http://localhost:3001`;
+- **React:** For building the user interface.
+- **Next.js:** For server-side rendering and static site generation.
+- **React Hooks:** For managing state and lifecycle features.
+- **Redux:** For state management.
+- **Redux Thunk:** For handling asynchronous actions.
+- **Redux Toolkit:** For efficient Redux development.
+- **Async Thunk:** For managing complex async logic.
+- **Fetch:** For making API requests.
+- **SSR:** Server-Side Rendering with Next.js.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14.x or later)
+- npm (v6.x or later)
+
+### Installation
+
+**1. Clone the repository:**
+
+```sh
+git clone https://github.com/your-username/food-and-drinks.git
+cd food-and-drinks
+```
+
+2. **Install dependencies:**
+
+```sh
+npm install
+```
+
+**3. Start the local server:**
+
+```sh
+npm run start-server
+```
+
+**4. Run the application:**
+
+```sh
+npm run dev
+```
+
+**5. Open the app:**
+Navigate to http://localhost:3000 in your web browser.
+
+Available Scripts
+- **npm run dev:** Starts the development server with hot reloading.
+- **npm run build:** Builds the application for production.
+- **npm run start:** Starts the application in production mode.
+- **npm run lint:** Runs ESLint to lint the codebase.
+- **npm run start-server:** Starts the mock server for handling API requests.
